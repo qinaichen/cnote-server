@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: cblog-server
+  thymeleaf:
+    mode: HTML
+    cache: false
+    suffix: .html

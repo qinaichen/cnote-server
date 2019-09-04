@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title th:text="${siteName}"></title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+        $webfont.load("body", "299c59b47a774b21a2713390e30c0643", "Source-Han-Light");
+        $webfont.draw();
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        html,body{
+            margin:0;
+            padding: 0;
+        }
+        .main{
+            padding-top: 30px;
+            padding-right: 0;
+        }
+        .index .main .split-line {
+            margin: -5px 0 15px;
+        }
+        .note-list{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .note-list li {
+            position: relative;
+            width: 100%;
+            margin: 0 0 15px;
+            padding: 15px 2px 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+            word-wrap: break-word;
+        }
+        .note-list .title:visited {
+            color: #969696;
+        }
+        .note-list .title {
+            margin: -7px 0 4px;
+            display: inherit;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .note-list .abstract {
+            margin: 0 0 8px;
+            font-size: 13px;
+            line-height: 24px;
+            color: #999;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .note-list .meta {
+            padding-right: 0!important;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" th:href="@{/}" th:text="${siteName}"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a th:href="@{/}">主页<span class="sr-only">(current)</span></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+   <div class="row">
+       <div class="split-line"></div>
+       <div class="col-xs-8 main">
+           <div>
+               <ul class="note-list">
+                   <li>
+                       <div class="content">
+                           <a class="title" target="_blank" href="/p/65f83aa86db8">公告：关于暂停用户发布功能，并全面清查平台内容</a>
+                           <p class="abstract">
+                               亲爱的简书用户 「简书」因个别上传作品用户违反《中华人民共和国网络安全法》《互联网信息服务管理办法》《互联网新闻信息服务管理规定》《互联网用户公...
+                           </p>
+                           <div class="meta">
+                            <span class="jsd-meta">
+                             2019-09-03
+                            </span>
+                           </div>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="content">
+                           <a class="title" target="_blank" href="/p/65f83aa86db8">公告：关于暂停用户发布功能，并全面清查平台内容</a>
+                           <p class="abstract">
+                               亲爱的简书用户 「简书」因个别上传作品用户违反《中华人民共和国网络安全法》《互联网信息服务管理办法》《互联网新闻信息服务管理规定》《互联网用户公...
+                           </p>
+                           <div class="meta">
+                            <span class="jsd-meta">
+                             2019-09-03
+                            </span>
+                           </div>
+                       </div>
+                   </li>
+               </ul>
+           </div>
+       </div>
+       <div class="col-xs-3" style="margin-left: 20px;">
+           <div class="panel panel-default">
+               <div class="panel-body">
+                   <a class="label label-primary">Java</a>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</body>
+</html>
